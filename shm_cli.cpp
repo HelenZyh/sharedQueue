@@ -11,9 +11,14 @@ int main()
 {
 	Queue q;
 	q.queue_read_init();
-	string str;
-	q.pop(str);
-	cout<<str<<endl;
+	Text str;
+	while(1){
+		if(q.pop(str)){
+			cout<<str.text<<endl;
+		}
+		sleep(1);
+	}
+	q.queue_destory();	
 	return 0;
 }
 
