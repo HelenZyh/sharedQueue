@@ -1,0 +1,40 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CC	Makefile	/^CC=g++$/;"	m
+CLI_BIN	Makefile	/^CLI_BIN=shm_cli$/;"	m
+CLI_SRC	Makefile	/^CLI_SRC=comm.cpp shm_cli.cpp$/;"	m
+FLAGS	Makefile	/^FLAGS=-g$/;"	m
+Head	comm.h	/^struct Head{$/;"	s
+INCLUDE	Makefile	/^INCLUDE=-I.\/$/;"	m
+Queue	comm.h	/^	explicit Queue(){$/;"	f	class:Queue
+Queue	comm.h	/^class Queue{$/;"	c
+SER_BIN	Makefile	/^SER_BIN=shm_ser$/;"	m
+SER_SRC	Makefile	/^SER_SRC=comm.cpp shm_ser.cpp$/;"	m
+_COMM_SHM_	comm.h	9;"	d
+_COUNT_	comm.h	23;"	d
+_PATH_	comm.h	21;"	d
+_PROJECT_ID_	comm.h	22;"	d
+_SIZE_	comm.h	24;"	d
+_arr	comm.h	/^	string *_arr;$/;"	m	class:Queue
+_head	comm.h	/^	Head *_head;$/;"	m	class:Queue
+front	comm.h	/^	size_t front;$/;"	m	struct:Head
+is_empty	comm.cpp	/^bool Queue::is_empty(){$/;"	f	class:Queue
+is_full	comm.cpp	/^bool Queue::is_full(){$/;"	f	class:Queue
+main	shm_cli.cpp	/^int main()$/;"	f
+main	shm_ser.cpp	/^int main()$/;"	f
+pop	comm.cpp	/^bool Queue::pop(string &str){$/;"	f	class:Queue
+push	comm.cpp	/^bool Queue::push(string &val){$/;"	f	class:Queue
+queue_read_init	comm.cpp	/^void Queue::queue_read_init(){$/;"	f	class:Queue
+queue_write_init	comm.cpp	/^void Queue::queue_write_init(){$/;"	f	class:Queue
+rear	comm.h	/^	size_t rear;$/;"	m	struct:Head
+shm_attach	comm.cpp	/^void *Queue::shm_attach(int shmid){$/;"	f	class:Queue
+shm_create	comm.cpp	/^int Queue::shm_create(){$/;"	f	class:Queue
+shm_create_get	comm.cpp	/^int Queue::shm_create_get(int flag){$/;"	f	class:Queue
+shm_destory	comm.cpp	/^int Queue::shm_destory(int shmid){$/;"	f	class:Queue
+shm_detach	comm.cpp	/^int Queue::shm_detach(const void *shmaddr){$/;"	f	class:Queue
+shm_get	comm.cpp	/^int Queue::shm_get(){$/;"	f	class:Queue
+~Queue	comm.h	/^	virtual ~Queue(){$/;"	f	class:Queue
